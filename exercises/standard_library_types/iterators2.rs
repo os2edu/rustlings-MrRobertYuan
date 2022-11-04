@@ -28,7 +28,7 @@ pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
 // ["hello", " ", "world"] -> "Hello World"
 pub fn capitalize_words_string(words: &[&str]) -> String {
     let mut ans = String::new();
-    words.into_iter.map(|&word| capitalize_first(word)).for_each(|x| ans += &x);
+    words.into_iter().map(|&word| capitalize_first(word)).for_each(|word| ans += &word);
     ans
 }
 
